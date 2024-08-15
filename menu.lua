@@ -1,6 +1,6 @@
 ------ * seere priv_9 Menu * ------
 --[[
-    # Rewriten by: seere_vip
+    # Rewriten by: seere_lol
 ]]
 
 repeat
@@ -8,8 +8,8 @@ repeat
  until game:IsLoaded()
  
  -- Menu/UI Creation
- if not isfile("seere.vip") then
-    makefolder("seere.vip")
+ if not isfile("seere.lol") then
+    makefolder("seere.lol")
  end
  
  local menu = game:GetObjects("rbxassetid://18959918329")[1] 
@@ -290,14 +290,14 @@ repeat
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = 'seere.<font color="rgb(0, 240, 255)">vip</font> - uid: <font color="rgb(0, 240, 255)">' .. uid .. '</font> / fps: <font color="rgb(0, 240, 255)">' .. fpsValue .. '</font> / ping: <font color="rgb(0, 240, 255)">' .. ping .. '</font> / time: <font color="rgb(0, 240, 255)">' .. time .. '</font>'
+         WaterMarkLabel.Text = 'seere.<font color="rgb(0, 240, 255)">lol</font> - uid: <font color="rgb(0, 240, 255)">' .. uid .. '</font> / fps: <font color="rgb(0, 240, 255)">' .. fpsValue .. '</font> / ping: <font color="rgb(0, 240, 255)">' .. ping .. '</font> / time: <font color="rgb(0, 240, 255)">' .. time .. '</font>'
        end
     end)
     return Watermark
  end
  
  local library = {
-    Title = 'seere.<font color="rgb(0, 240, 255)">vip</font> || fallen',
+    Title = 'seere.<font color="rgb(0, 240, 255)">lol</font> || fallen',
     keybind = Enum.KeyCode.RightBracket,
     Watermark = createWatermark(),
        Colors = {
@@ -2323,7 +2323,7 @@ repeat
                             if v == x then return true end
                             end return false end
                             function library:createConfig()
-                                makefolder("seere.vip")
+                                makefolder("seere.lol")
                                 local name = library.flags["config_name"]
                                 if contains(library.options["config_box"].values, name) then return library:Notify(name..".cfg already exists!", 5) end
                                 if name == "" then return library:Notify("You need to put a name in!", 5) end
@@ -2335,14 +2335,14 @@ repeat
                                 else jig[i] = v
                                 end
                             end
-                            writefile("seere.vip/"..name..".cfg",game:GetService("HttpService"):JSONEncode(jig))
+                            writefile("seere.lol/"..name..".cfg",game:GetService("HttpService"):JSONEncode(jig))
                             library:Notify("Succesfully created config "..name..".cfg!", 5)
                             library:refreshConfigs()
                         end
  
                         function library:saveConfig()
                             pcall(function()
-                                makefolder("seere.vip")
+                                makefolder("seere.lol")
                                 local name = library.flags["config_box"]
                                 if not name then
                                     return
@@ -2406,7 +2406,7 @@ repeat
  
                 function library:refreshConfigs()
                     local tbl = {}
-                    for i,v in next, listfiles("seere.vip") do table.insert(tbl,v) end
+                    for i,v in next, listfiles("seere.lol") do table.insert(tbl,v) end
                     library.options["config_box"].refresh(tbl)
                 end      
             end)()                         
