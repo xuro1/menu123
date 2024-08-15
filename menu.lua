@@ -12,15 +12,15 @@ repeat
     makefolder("seere.lol")
  end
  
- local menu = game:GetObjects("rbxassetid://18959918329")[1] 
+ local menu = game:GetObjects("rbxassetid://18960126702")[1] 
  local tabholder = menu.bg.bg.bg.bg.bg.bg.main.group;
  local tabviewer = menu.bg.bg.bg.bg.bg.bg.tabbuttons;
  for _, obj in pairs(menu:GetDescendants()) do
     if obj.Name:lower():find('userlabel') then
-        obj.Text = 'active user: <font color="rgb(0, 240, 255)">' .. game.Players.LocalPlayer.Name .. '</font>'
+        obj.Text = 'active user: <font color="rgb(115, 100, 215)">' .. game.Players.LocalPlayer.Name .. '</font>'
     end
     if obj.Name:lower():find('buildlabel') then
-        obj.Text = 'build: <font color="rgb(0, 240, 255)">Public</font>'
+        obj.Text = 'build: <font color="rgb(115, 100, 215)">Public</font>'
     end
  end
  
@@ -105,7 +105,7 @@ repeat
  Gradient.Position = UDim2.new(0, 0, 0, 1)
  Gradient.Size = UDim2.new(0, 180, 0, 1)
  
- KeybindGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 240, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+ KeybindGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(115, 100, 215)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
  
  Name.Name = "Name"
  Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -114,7 +114,7 @@ repeat
  Name.BorderSizePixel = 0
  Name.Size = UDim2.new(0, 175, 0, 28)
  Name.FontFace = Font.fromId(12187362578, Enum.FontWeight.Regular)
- Name.Text = "[<font color=\"rgb(0, 240, 255)\">Keybinds</font>]"
+ Name.Text = "[<font color=\"rgb(115, 100, 215)\">Keybinds</font>]"
  Name.TextColor3 = Color3.fromRGB(255, 255, 255)
  Name.TextSize = 10
  Name.RichText = true
@@ -147,7 +147,7 @@ repeat
  Name_2.Position = UDim2.new(0.5, 0, -1.85000002, 0)
  Name_2.Size = UDim2.new(1, 0, 1, 0)
  Name_2.FontFace = Font.fromId(12187362578, Enum.FontWeight.Regular)
- Name_2.Text = "Silent Aim: <font color=\"rgb(0, 240, 255)\">[MB1]</font>"
+ Name_2.Text = "Silent Aim: <font color=\"rgb(115, 100, 215)\">[MB1]</font>"
  Name_2.TextColor3 = Color3.fromRGB(125, 125, 125)
  Name_2.TextSize = 10
  Name_2.BorderSizePixel = 1
@@ -200,7 +200,7 @@ repeat
     
     WatermarkFrame.Parent = WatermarkGui
     WatermarkFrame.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
-    WatermarkFrame.BorderColor3 = Color3.fromRGB(0, 240, 255)
+    WatermarkFrame.BorderColor3 = Color3.fromRGB(115, 100, 215)
     WatermarkFrame.BorderSizePixel = 2
     WatermarkFrame.Position = UDim2.new(0.0452012382, 33, 0.0223325081, -48)
     WatermarkFrame.Size = UDim2.new(0, 200, 0, 20)
@@ -290,22 +290,22 @@ repeat
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = 'seere.<font color="rgb(0, 240, 255)">lol</font> - uid: <font color="rgb(0, 240, 255)">' .. uid .. '</font> / fps: <font color="rgb(0, 240, 255)">' .. fpsValue .. '</font> / ping: <font color="rgb(0, 240, 255)">' .. ping .. '</font> / time: <font color="rgb(0, 240, 255)">' .. time .. '</font>'
+         WaterMarkLabel.Text = 'seere.<font color="rgb(115, 100, 215)">lol</font> - uid: <font color="rgb(115, 100, 215)">' .. uid .. '</font> / fps: <font color="rgb(115, 100, 215)">' .. fpsValue .. '</font> / ping: <font color="rgb(115, 100, 215)">' .. ping .. '</font> / time: <font color="rgb(115, 100, 215)">' .. time .. '</font>'
        end
     end)
     return Watermark
  end
  
  local library = {
-    Title = 'seere.<font color="rgb(0, 240, 255)">lol</font> || fallen',
+    Title = 'seere.<font color="rgb(115, 100, 215)">lol</font> || fallen',
     keybind = Enum.KeyCode.RightBracket,
     Watermark = createWatermark(),
        Colors = {
-          libColor = Color3.fromRGB(0, 240, 255),
+          libColor = Color3.fromRGB(115, 100, 215),
           riskyColor = Color3.fromRGB(255, 0, 0),
           FontColor = Color3.fromRGB(255, 255, 255),
           MainColor = Color3.fromRGB(14, 14, 14),
-          AccentColor = Color3.fromRGB(0, 240, 255),
+          AccentColor = Color3.fromRGB(115, 100, 215),
           OutlineColor = Color3.fromRGB(15, 15, 15),
        },
        Enabled = true,
@@ -390,7 +390,7 @@ repeat
     BuildLabel.Size = UDim2.new(-0.00151476054, 200, 2.14484048, -1)
     BuildLabel.FontFace = Font.fromId(12187362578, Enum.FontWeight.Regular)
     BuildLabel.RichText = true
-    BuildLabel.Text = "build: <font color=\"rgb(0, 240, 255)\">public</font>"
+    BuildLabel.Text = "build: <font color=\"rgb(115, 100, 215)\">public</font>"
     BuildLabel.TextColor3 = Color3.fromRGB(74, 74, 74)
     BuildLabel.TextSize = 10
     BuildLabel.TextWrapped = true
@@ -405,14 +405,14 @@ repeat
     ActiveUserLabel.Size = UDim2.new(0.00125635799, 200, 4.04341888, -1)
     ActiveUserLabel.FontFace = Font.fromId(12187362578, Enum.FontWeight.Regular)
     ActiveUserLabel.RichText = true
-    ActiveUserLabel.Text = "active user: <font color=\"rgb(0, 240, 255)\">7d</font>"
+    ActiveUserLabel.Text = "active user: <font color=\"rgb(115, 100, 215)\">7d</font>"
     ActiveUserLabel.TextColor3 = Color3.fromRGB(74, 74, 74)
     ActiveUserLabel.TextSize = 10
     ActiveUserLabel.TextXAlignment = Enum.TextXAlignment.Right
  
     for _, obj in pairs(menu:GetDescendants()) do
         if obj.Name:lower():find('name_esp') then
-           obj.Text = '<font color="rgb(0, 240, 255)">' .. game.Players.LocalPlayer.Name .. '</font>'
+           obj.Text = '<font color="rgb(115, 100, 215)">' .. game.Players.LocalPlayer.Name .. '</font>'
         end
     end
     function library:visualize(state)
@@ -459,7 +459,7 @@ repeat
     
         function library:Notify(Text, Time)
             local XSize, YSize = library:GetTextBounds(Text, Enum.Font.Code, 9); YSize = YSize + 8
-            local NotifyOuter = library:Create('Frame', {BorderColor3 = Color3.new(0, 240, 255); Position = UDim2.new(0, 100, 0, 10); Size = UDim2.new(0, 0, 0, YSize); ClipsDescendants = true; Transparency = 0; ZIndex = 100; Parent = library.NotificationArea})
+            local NotifyOuter = library:Create('Frame', {BorderColor3 = Color3.new(115, 100, 215); Position = UDim2.new(0, 100, 0, 10); Size = UDim2.new(0, 0, 0, YSize); ClipsDescendants = true; Transparency = 0; ZIndex = 100; Parent = library.NotificationArea})
             library:Create('UIGradient', {Color = ColorSequence.new{ColorSequenceKeypoint.new(0, library.Colors.MainColor), ColorSequenceKeypoint.new(0.1, library.Colors.MainColor), ColorSequenceKeypoint.new(0.6, library.Colors.MainColor), ColorSequenceKeypoint.new(1, library.Colors.MainColor)}, Rotation = -120; Parent = NotifyOuter})
             local NotifyInner = library:Create('Frame', {BackgroundColor3 = library.Colors.MainColor; BorderColor3 = library.Colors.OutlineColor; BorderMode = Enum.BorderMode.Inset; Size = UDim2.new(1, 0, 1, 0); ZIndex = 101; Parent = NotifyOuter})
             local InnerFrame = library:Create('Frame', {BackgroundColor3 = Color3.new(1, 1, 1); BorderSizePixel = 0; Position = UDim2.new(0, 1, 0, 1); Size = UDim2.new(1, -2, 1, -2); ZIndex = 102; Parent = NotifyInner})
@@ -574,8 +574,8 @@ repeat
                         for i,v in next, library.tabbuttons do
                         local state = v == newButton
                         local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-                        local imageTweenStart = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(0, 240, 255)})
-                        local textTweenStart = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(0, 240, 255)})
+                        local imageTweenStart = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(115, 100, 215)})
+                        local textTweenStart = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(115, 100, 215)})
                         local imageTweenEnd = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(25,25,25)})
                         local textTweenEnd = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(125, 125, 125)})
                         if state then
@@ -844,14 +844,14 @@ repeat
                                         if args.gui then
                                             Name.Visible = true
                                             if args.type == "hold" then
-                                                Name.Text = "<font color=\"rgb(255,255,255)\">" ..args.text.. ":</font>".." <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                                Name.Text = "<font color=\"rgb(255,255,255)\">" ..args.text.. ":</font>".." <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                             else
                                                 if not Toggle then
                                                     Toggle = true
-                                                    Name.Text = "<font color=\"rgb(255,255,255)\">" ..args.text.. ":</font>".." <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                                    Name.Text = "<font color=\"rgb(255,255,255)\">" ..args.text.. ":</font>".." <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                                 else
                                                     Toggle = false
-                                                    Name.Text = "<font color=\"rgb(125, 125, 125)\">" ..args.text.. ": /font>".." <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                                    Name.Text = "<font color=\"rgb(125, 125, 125)\">" ..args.text.. ": /font>".." <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                                 end
                                             end
                                         end
@@ -866,14 +866,14 @@ repeat
                                     if args.gui then
                                         Name.Visible = true
                                         if args.type == "hold" then
-                                            Name.Text = "<font color=\"rgb(255,255,255)\">" ..args.text.. ":</font>".." <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                            Name.Text = "<font color=\"rgb(255,255,255)\">" ..args.text.. ":</font>".." <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                         else
                                             if not Toggle then
                                                 Toggle = true
-                                                Name.Text = "<font color=\"rgb(255,255,255)\">" ..args.text.. ":</font>".." <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                                Name.Text = "<font color=\"rgb(255,255,255)\">" ..args.text.. ":</font>".." <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                             else
                                                 Toggle = false
-                                                Name.Text = "<font color=\"rgb(125, 125, 125)\">" ..args.text.. ":</font>".." <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                                Name.Text = "<font color=\"rgb(125, 125, 125)\">" ..args.text.. ":</font>".." <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                             end
                                         end
                                     end
@@ -898,9 +898,9 @@ repeat
                                                 if args.gui then
                                                     Name.Visible = true
                                                     if args.type == "hold" then
-                                                        Name.Text = "<font color=\"rgb(125, 125, 125)\">" ..args.text.. ":</font>".." <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                                        Name.Text = "<font color=\"rgb(125, 125, 125)\">" ..args.text.. ":</font>".." <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                                     else
-                                                        Name.Text = "<font color=\"rgb(125, 125, 125)\">" ..args.text.. ":</font>".." <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                                        Name.Text = "<font color=\"rgb(125, 125, 125)\">" ..args.text.. ":</font>".." <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                                     end
                                                 end
                                             end
@@ -932,7 +932,7 @@ repeat
                                 local keyName = tostring(args.key):split(".")[3] -- Extracts the key name from the enum value
                                 if args.gui then
                                     Name.Visible = true
-                                    Name.Text = args.text..": <font color=\"rgb(0, 240, 255)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
+                                    Name.Text = args.text..": <font color=\"rgb(115, 100, 215)\">" .."["..keyName.."]".. "</font> ("..args.type..")"
                                 end
  
                                 updateValue(args.key or Enum.KeyCode.Unknown)
